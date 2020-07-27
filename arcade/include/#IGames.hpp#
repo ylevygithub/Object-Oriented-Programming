@@ -1,0 +1,33 @@
+/*
+** EPITECH PROJECT, 2020
+** IGames.hpp
+** File description:
+** games interface
+*/
+
+#ifndef GAME_INTERFACE
+#define GAME_INTERFACE
+
+#include "Map.hpp"
+#include "SpriteSheet.hpp"
+#include <iostream>
+#include <string>
+
+namespace interface
+{
+    class IGames
+    {
+        private :
+            int _score;
+        public:
+                        virtual void start(IGraphics *) = 0;
+            // virtual const arcade::Map *retrieve_frame() = 0;
+            // virtual void injectKey(int key) = 0;
+            // virtual void restartGame() = 0;
+            // virtual int getScore() = 0;
+
+            // virtual const arcade::SpriteSheet *getSpriteSheet() = 0;
+    };
+}
+
+#endif
